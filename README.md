@@ -93,6 +93,10 @@ Ao obter o banco de dados de Síndrome respiratória aguda grave, foram localiza
 | CLASSI_FIN |	Diagnóstico final do caso |	<p>1-SRAG por influenza </p> <p>2-SRAG por outro vírus respiratório </p> <p>3-SRAG por outro agente etiológico, qual:</p><p> 4-SRAG não especificado </p> <p> 5-SRAG por covid-19 </p> |
 | EVOLUCAO |	Evolução do caso |	<p>1-Cura </p> <p> 2-Óbito </p> <p>3- Óbito por outras causas </p> <p> 9-Ignorado </p>| 
 
+# Resultados
+```sql
+31 anos de idade
+``` 
 
 # Autores
 
