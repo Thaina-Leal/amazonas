@@ -30,7 +30,7 @@ Mesmo após decretado o fim da pandemia pela OMS, buscou-se entender neste estud
 <p>b)	Os pacientes em questão receberam as vacinas contra Influenza e COVID-19? </p>
 <p>c)	Qual a taxa de internação dos casos notificados? </p>
 <p>d)	Qual a taxa de mortalidade dos casos notificados? </p>
-<p>e)	Ao longo do protocolo de atendimento, qual o diagnóstico destes pacientes?</p>
+<p>e)	Quantos diagnóstico de COVID?</p>
 
 # Metodologia
 Ao obter o banco de dados de Síndrome respiratória aguda grave, foram localizadas as categorias abaixo.
