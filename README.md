@@ -1,4 +1,4 @@
-# Análise de Dados Exploratória no estado do Amazonas sobre a Síndrome Respiratória Aguda Grave no ano de 2023.
+# Análise de Dados Exploratória sobre a Síndrome Respiratória Aguda Grave no Amazonas em  2023 
 
 
 ![Capa do Projeto](https://dive.sc.gov.br/images/doencas%20e%20agravos/Doen%C3%A7as%20Definitivas/Banners-SRAG-736x378px.png)
