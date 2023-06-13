@@ -16,7 +16,7 @@ Mesmo após decretado o fim da pandemia pela OMS, buscou-se entender neste estud
 
 # Índice/Sumário
 
-* [Introdução](#sobre-o-projeto)
+* [Sobre o Projeto](#sobre-o-projeto)
 * [Objetivos](#objetivos)
 * [Metodologia](#metodologia)
 * [Autores](#autores)
