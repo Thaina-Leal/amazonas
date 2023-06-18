@@ -4,15 +4,17 @@
 ![Capa do Projeto](https://dive.sc.gov.br/images/doencas%20e%20agravos/Doen%C3%A7as%20Definitivas/Banners-SRAG-736x378px.png)
 
 # Sobre o Projeto
-As infecções respiratórias são doenças com alta incidência e prevalência na população mundial, sendo a terceira causa de mortes em 2007 (REFERENCIA https://scielosp.org/pdf/rsp/2022.v56/52/pt) . Complicações decorrentes destas infecções, como os quadros de Síndrome Respiratória Aguda Grava (SRAG) levam a necessidade de internação hospitalar e possuem elevada mortalidade (REFERENCIA Hui DSC, Zumla A. Severe acute respiratory syndrome: historical, epidemiologic, and clinical features. Infect Dis Clin North Am 2019; 33 (4): 869-89. https://doi.org/10.1016/j.idc.2019.07.001).  
+As infecções respiratórias são doenças com alta incidência e prevalência na população mundial, sendo a terceira causa de mortes em 2007 [Oliveira, Montovani, Santana, Leon e Marques 2021]. Complicações decorrentes destas infecções, como os quadros de Síndrome Respiratória Aguda Grava (SRAG) levam a necessidade de internação hospitalar, e por vezes provoca óbitos [Custódio, Ribas, Toledo, Carvalho, Lima e Freitas 2021].
 
-A alta capacidade de mutação dos vírus causadores destas infecções e as altas taxas de transmissão preocupa autoridades mundiais de saúde e o monitoramento dos dados epidemiológicos se torna de extrema importância afim de planejamento de políticas públicas de promoção da saúde e prevenção de doenças. (referencia https://www.scielo.br/j/rbepid/a/KQ5swCNJ6WrDGjyvq8ypQbd/?lang=pt). 
+A alta capacidade de mutação dos diferentes vírus causadores destas infecções e as altas taxas de transmissão preocupam autoridades mundiais de saúde e o monitoramento dos dados epidemiológicos se torna de extrema importância para planejamento de políticas públicas de promoção da saúde e prevenção de doenças [Custódio, Ribas, Toledo, Carvalho, Lima e Freitas 2021].
 
-Em março de 2020, foi decretado pela Organização Mundial de Saúde (OMS), devido o agravamento das notificações em território mundial, estado de pandemia em decorrência da COVID-19, causada pelo vírus SARS-CoV-2, direcionando todos os países a adotarem medidas preventivas, afim de mitigar o alastramento e o colapso dos sistemas de saúde (Referencia https://www.scielo.br/j/rbepid/a/KQ5swCNJ6WrDGjyvq8ypQbd/?lang=pt). 
+Em março de 2020, foi decretado pela Organização Mundial de Saúde (OMS), devido agravamento das notificações em território mundial, estado de pandemia em decorrência da COVID-19, causada pelo vírus SARS-CoV-2, direcionando todos os países a adotarem medidas preventivas, afim de mitigar o alastramento e o colapso dos sistemas de saúde [Custódio, Ribas, Toledo, Carvalho, Lima e Freitas 2021]. 
 
 A partir de tal cenário, o Ministério da Saúde (MS), incorporou o monitoramento de sintomas decorrentes da COVID-19 a vigilância da Síndrome Respiratória Aguda Grave (SRAG), já em monitoramento desde a pandemia de Influenza A (H1N1), ocorrido em 2009.
 
-Mesmo após decretado o fim da pandemia pela OMS, buscou-se entender neste estudo dados epidemiológicos das notificações de Síndrome Respiratória Aguda Grave (SRAG) no Brasil no ano de 2023, utilizando os dados disponibilizados pelo Departamento de Informática do SUS (DATA SUS), divulgados pelo Ministério da Saúde (MS). 
+Buscou-se entender neste estudo os dados epidemiológicos das notificações de Síndrome Respiratória Aguda Grave (SRAG) no Brasil no ano de 2023, utilizando os dados disponibilizados pelo Departamento de Informática do SUS (DATA SUS), divulgados pelo Ministério da Saúde (MS). 
+ 
+
 
 # Índice/Sumário
 
@@ -25,7 +27,7 @@ Mesmo após decretado o fim da pandemia pela OMS, buscou-se entender neste estud
 
 
 # Objetivos
-<p>Para este estudo, buscou-se entender o perfil das notificações de SRAG no Brasil entre janeiro de 2023 e março do mesmo ano, através de uma análise exploratória de dados (Exploratory Data Analysis - EDA), do conjunto de dados SRAG 2021 a 2023 - Banco de Dados de Síndrome Respiratória Aguda Grave - incluindo dados da COVID-19, disponível em 2023. Serão respondidas ao longo deste estudo as seguintes questões: </p>
+<p>Para este estudo, buscou-se entender o perfil das notificações de SRAG no Brasil entre janeiro de 2023 e maio do mesmo ano, através de uma análise exploratória de dados (Exploratory Data Analysis - EDA), do conjunto de dados Amazonas, adaptado pela autora. Serão respondidas ao longo deste estudo as seguintes questões: </p>
 <p>a)	Qual a média de idade dos pacientes? </p>
 <p>b)	Os pacientes em questão receberam as vacinas contra Influenza e COVID-19? </p>
 <p>c)	Qual a taxa de internação dos casos notificados? </p>
@@ -93,10 +95,18 @@ Ao obter o banco de dados de Síndrome respiratória aguda grave, foram localiza
 | CLASSI_FIN |	Diagnóstico final do caso |	<p>1-SRAG por influenza </p> <p>2-SRAG por outro vírus respiratório </p> <p>3-SRAG por outro agente etiológico, qual:</p><p> 4-SRAG não especificado </p> <p> 5-SRAG por covid-19 </p> |
 | EVOLUCAO |	Evolução do caso |	<p>1-Cura </p> <p> 2-Óbito </p> <p>3- Óbito por outras causas </p> <p> 9-Ignorado </p>| 
 
-# Resultados
-```sql
-31 anos de idade
-``` 
+# Banco de dados  
+O banco de dados original, SRAG 2021 a 2023 - Banco de Dados de Síndrome Respiratória Aguda Grave - incluindo dados da COVID-19, disponível em https://opendatasus.saude.gov.br/dataset/srag-2021-a-2023, foi encontrado em formato CSV (Comma-separated values), e foi exportado para MySQL, para consulta das informações necessárias e a análise deste estudo.
+
+# Limpeza de dados
+Foi realizado a limpeza dos dados, e as colunas DT_NOTIFIC, DT_NOTIFIC, SEM_PRI, ID_REGIONA, CO_REGIONA, CO_MUN_NOT, ID_UNIDADE, COD_IDADE, ID_PAIS, CO_PAIS, SG_UF, ID_RG_RESI, CO_RG_RESI, ID_MN_RESI, CO_MUN_RES, SURTO_SG, MAE_VAC, DT_VAC_MAE, M_AMAMENTA, DT_DOSEUNI, DT_1_DOSE, DT_2_DOSE, TP_ANTIVIR, OUT_ANTIV, DT_ANTIVIR, SG_UF_INTE, ID_RG_INTE, CO_RG_INTE, ID_MN_INTE, CO_MU_INTE, RAIOX_RES, RAIOX_OUT, DT_RAIOX, AMOSTRA, DT_COLETA, TP_AMOSTRA, OUT_AMOST, PCR_RESUL, DT_PCR, TP_FLU_PCR, PCR_FLUASU, FLUASU_OUT, PCR_FLUBLI, FLUBLI_OUT, POS_PCROUT, PCR_VSR, PCR_PARA1 PCR_PARA2, PCR_PARA3, PCR_PARA4, PCR_ADENO, PCR_METAP, PCR_BOCA, PCR_RINO, PCR_OUTRO, DS_PCR_OUT, CLASSI_OUT, CRITERIO, DT_EVOLUCA, DT_ENCERRA, DT_DIGITA, HISTO_VGM, PAIS_VGM, CO_PS_VGM, LO_PS_VGM, DT_VGM, DT_RT_VGM, PCR_SARS2, PAC_COCBO, PAC_DSCBO, OUT_ANIM, DOR_ABD, FADIGA, PERD_OLFT, PERD_PALA, TOMO_RES, TOMO_OUT, DT_TOMO, TP_TES_AN, DT_RES_AN, RES_AN, POS_AN_FLU, TP_FLU_AN, POS_AN_OUT, AN_SARS2, AN_VSR, AN_PARA1, AN_PARA2, AN_PARA3, AN_ADENO, AN_OUTRO, DS_AN_OUT, TP_AM_SOR, SOR_OUT, DT_CO_SOR, TP_SOR, OUT_SOR, DT_RES, RES_IGG, RES_IGM, RES_IGA, ESTRANG, FAB_COV_1, FAB_COV_2, FAB_COVREF, LAB_PR_COV, LOTE_1_COV, LOTE_2_COV, LOTE_REF, FNT_IN_COV, FAB_COVRF2, LOTE_REF2, TRAT_COV, TIPO_TRAT, OUT_TRAT e DT_TRT_COV foram removidas do banco de dados original, por serem desnecessárias a análise empreendia neste estudo.
+
+# Dados ausentes
+Os campos das colunas CS_ESCOL_N, CS_ZONA, NOSOCOMIAL, AVE_SUINO, FEBRE, TOSSE, GARGANTA, DISPNEIA, DESC_RESP, SATURACAO, DIARREIA, VOMITO, OUTRO_SIN, OUTRO_DES, PUERPERA,, FATOR_RISC, CARDIOPATI, HEMATOLOGI, SIND_DOWN, HEPATICA, ASMA, DIABETES, NEUROLOGIC, PNEUMOPATI, IMUNODEPRE, RENAL, OBESIDADE, OUT_MORBI, MORB_DESC, VACINA, DT_UT_DOSE, ANTIVIRAL, HOSPITAL, DT_INTERNA, UTI, DT_ENTUTI, DT_SAIDUTI, SUPORT_VEN, PCR_RESUL, POS_PCRFLU, CLASSI_FIN, EVOLUCAO, VACINA_COV, DOSE_1_COV, DOSE_2_COV, DOSE_REF e DOSE_2REF foram preenchidos com o indicador NULL antes do tratamento dos dados, afim de processamento das informações através do MySQL.
+
+# Tratamento de dados
+Foi utilizado o sistema MYSQL para processamento e tratamento dos dados. Na aplicação, foi criado o banco de dados, a partir do banco de dados original, contemplando as categorias necessárias a resposta das questões deste estudo. O banco de dados foi nomeado de “Amazonas”, e poderá ser acessado através do Github, no link: https://github.com/Thaina-Leal/amazonas/blob/main/amazonas.sql. 
+
 
 # Autores
 
